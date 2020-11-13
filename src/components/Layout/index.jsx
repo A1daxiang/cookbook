@@ -13,6 +13,7 @@ import moreActive from "@/assets/icon/more-active.png";
 
 //导入需要使用的内容组件
 import CookBookCmp from "@/views/CookBook";
+import CateGory from "@/views/CateGory";
 
 class Index extends Component {
     //构造方法,初始化渲染方法中需要用到的数据
@@ -105,7 +106,7 @@ class Index extends Component {
                         }}
                         data-seed="logId1"
                     >
-                        内容:第二个菜单的内容
+                        <CateGory></CateGory>
                     </TabBar.Item>
                     <TabBar.Item
                         icon={

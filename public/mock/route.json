@@ -1,5 +1,6 @@
 {
     "/api/swiper": "/swiper",
-    "/api/hotcat": "/hotcat",
-    "/api/list": "/list"
+    "/api/hotcate": "/hotcate",
+    "/api/detail": "/detail",
+    "/api/category": "/category"
 }

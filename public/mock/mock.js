@@ -1,12 +1,14 @@
 // commonJs模块化
 // json-server配置文件
 const swiper = require("./cb-swiper.json");
-const hotcat = require("./cb-hotcat.json");
-const list = require("./cb-list.json");
+const hotcate = require("./cb-hotcate.json");
+const detail = require("./cb-detail.json");
+const category = require("./cb-category.json");
 
 // 导出
 module.exports = () => ({
     swiper,
-    hotcat,
-    list,
+    hotcate,
+    detail,
+    category,
 });

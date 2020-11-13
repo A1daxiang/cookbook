@@ -1,15 +1,16 @@
 import React, { Component } from "react";
 import { Grid } from "antd-mobile";
 import Request from "@/http/request";
-import { HOTCAT } from "@/config/uri";
-
+import { HOTCATE } from "@/config/uri";
+// 引入样式
+import { Title } from "./style.js";
 class Index extends Component {
     state = {
         data: [],
     };
     async componentDidMount() {
         try {
-            let ret = await Request.get(HOTCAT);
+            let ret = await Request.get(HOTCATE);
             if (ret.data.code === 0) {
                 //将数据处理成Grid需要的数据格式
                 let data = [];
@@ -29,7 +30,7 @@ class Index extends Component {
     render() {
         return (
             <>
-                <div style={{ color: "gray" }}>热门分类</div>
+                <Title>热门分类</Title>
                 <Grid
                     data={this.state.data}
                     square={false}

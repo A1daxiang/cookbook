@@ -5,8 +5,8 @@ import React, { Component } from "react";
 import HeaderNav from "@/components/HeaderNav"; //小写index可以省略
 import Swiper from "@/components/Swiper";
 import Search from "@/components/Search";
-import HotCat from "@/components/HotCat";
-import List from "@/components/List";
+import HotCate from "@/components/HotCate";
+import GoodCook from "@/components/GoodCook";
 
 class Index extends Component {
     render() {
@@ -19,9 +19,9 @@ class Index extends Component {
                 {/*搜索框*/}
                 <Search></Search>
                 {/* 热门分类 */}
-                <HotCat></HotCat>
+                <HotCate></HotCate>
                 {/* 精品好菜 */}
-                <List></List>
+                <GoodCook></GoodCook>
             </>
         );
     }
